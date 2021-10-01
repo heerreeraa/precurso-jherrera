@@ -20,6 +20,8 @@
         * y otra subcadena que contenga el segundo número
         */
 
+        // 1. length  2. indexOf  3. substring
+
         let operacion = prompt("Introduzca la suma en el formato (cifra 1 + cifra 2");
 
         let posicionSimbolo = operacion.indexOf("+");
@@ -28,8 +30,8 @@
         
         let cifra1 = operacion.substring(0, posicionSimbolo);
         let cifra2 = operacion.substring(posicionSimbolo, ultimaCifra);    
-        
-        console.log(cifra1 + cifra2);
+        let sumaTotal = (cifra1+cifra2)
+        console.log(sumaTotal);
 
     </script>
 </body>
