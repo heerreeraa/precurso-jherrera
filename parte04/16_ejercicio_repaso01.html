@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio Repaso 1</title>
 </head>
 
 <body>
     <script>
+
         /*
          * Escribe un programa que dada una palabra en minúsculas, muestre en la consola la mitad de la palabra en minúsculas y la otra mitad en mayúsculas.
          * Pistas:
@@ -17,6 +18,24 @@
          * 3. Para poder modificar la mitad de la palabra (mayúsculas), necesitarás primero obtener una cadena que sólo tenga esa parte
          * 4. Una vez que tengamos la mitad de la palabra en mayúsculas, tendrás que reemplazar una subcadena por otra
          */
+
+        // 1.Subcadena  2. Lowercase  3. Uppercase
+
+        // elefante
+        let cadena = "elefante";
+            console.log(cadena);
+
+        // ELEFante
+        let subcadena1 = cadena.substring(0, 4);
+            let subcadenaMayus = subcadena1.toUpperCase();
+        let subcadena2 = cadena.substring(4, 8);
+            console.log(subcadenaMayus+subcadena2);
+
+        // elefANTE
+        let subcadena1Minus = subcadenaMayus.toLowerCase();
+        let subcadena2Mayus = subcadena2.toUpperCase();
+            console.log(subcadena1Minus+subcadena2Mayus);
+
     </script>
 </body>
 

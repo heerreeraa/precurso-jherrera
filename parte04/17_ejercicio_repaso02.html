@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio Repaso 2</title>
 </head>
 
 <body>
     <script>
+
         /*
         * Escriba un programa que pida al usuario una suma y que te devuelva por consola los números que forman parte de la operación.
         * Por ejemplo: 23+56 → el programa devolverá 23 y 56.
@@ -18,6 +19,18 @@
         * 3. Una vez sepas que posición ocupa dicho carácter, puedes recuperar una subcadena que devuelva el primer número
         * y otra subcadena que contenga el segundo número
         */
+
+        let operacion = prompt("Introduzca la suma en el formato (cifra 1 + cifra 2");
+
+        let posicionSimbolo = operacion.indexOf("+");
+        let cifrasTotales = operacion.length;
+        let ultimaCifra = (cifrasTotales-1);
+        
+        let cifra1 = operacion.substring(0, posicionSimbolo);
+        let cifra2 = operacion.substring(posicionSimbolo, ultimaCifra);    
+        
+        console.log(cifra1 + cifra2);
+
     </script>
 </body>
 
