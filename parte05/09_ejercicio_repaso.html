@@ -4,17 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio repaso</title>
 </head>
 
 <body>
     <script>
+
         /*
         * Crear un array vacío. Pedir al usuario 3 veces que escriba un string. Guardar cada uno de esos strings en la posición 0 , 1 y 2.
         * Mostrar en pantalla en el orden: primero posición 1, después posición 2 y por último posición 0.
         * Pista:
         * Puedes utilizar un bucle para ir pedir una palabra al usuario e introducirlo en cada una de las posiciones del array.
         */
+
+        let strings = [];
+
+        let string1 = prompt("Introduce el primer string que quiere almacenar");
+        let string2 = prompt("Introduce el segundo string que quiere almacenar");
+        let string3 = prompt("Introduce el tercer string que quiere almacenar");
+
+        strings[0] = string1;
+        strings[1] = string2;
+        strings[3] = string3;
+
+        for (let i = 0; i < strings.length; i++) {
+            console.log(strings[i]);
+        }
 
 
     </script>
